@@ -54,7 +54,7 @@ To set a cookie, use the document.cookie property and set it to a string with th
 To get a cookie, use the document.cookie property and split the string by semicolons to get an array of cookies. Then loop through the array and find the cookie with the name you want: 
 ```
 let cookies = document.cookie.split(';'); 
-for (var i = 0; i < cookies.length; i++) { 
+for (let i = 0; i < cookies.length; i++) { 
     let cookie = cookies[i].trim(); 
     if (cookie.indexOf('name=') == 0) { 
         let value = cookie.substring('name='.length, cookie.length); 
